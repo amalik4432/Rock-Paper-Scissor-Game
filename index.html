@@ -4,9 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>hhhhh</h1>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <section id="home">
+      <h1>Welcome to the website</h1>
+      <p>This is about of my website.</p>
+      <img
+        class="img"
+        src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D"
+        alt="A human image"
+      />
+    </section>
+
+    <section id="about">
+      <h2>This is about</h2>
+      <article>
+        <h3>My name is John</h3>
+        <p>I am a web developer from London.</p>
+      </article>
+    </section>
+    <section id="asside">
+      <aside class="learnedLanguages">I learned these languages</aside>
+      <ul class="languages-list">
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Mingodb</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <form action="/submit" method="post">
+        <label for="name" name="Name">Name: </label><br />
+        <input type="text" name="name" id="name" /><br />
+        <label for="email" email="Email"> Email: </label><br />
+        <input type="email" name="email" id="email" /><br />
+        <label for="message">Message: </label><br />
+        <textarea name="message" id="message" rows="5" cols="40"></textarea
+        ><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <footer>Copyright &copy; 2021 John Doe</footer>
   </body>
-  <script src="first.js"></script>
 </html>
